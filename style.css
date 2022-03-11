@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game .container .message, .game .container .upcoming-words, .game .container .control {
+  padding: 15px;
+  background-color: white;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.game .name {
+  background-color: #2196f3;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.game .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.game .container select {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  border: 3px solid #2196f3;
+}
+
+.game .container .message {
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 7px;
+  display: none;
+}
+
+.game .container .message span {
+  font-weight: bold;
+  color: darkcyan;
+}
+
+.game .container .message span::before {
+  content: "[ ";
+}
+
+.game .container .message span::after {
+  content: " ]";
+}
+
+.game .container .start {
+  background-color: cadetblue;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 20px;
+  width: 250px;
+  display: block;
+  margin: 0 auto 5px;
+  cursor: pointer;
+  border-radius: 7px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+.game .container .start:hover {
+  background-color: cornflowerblue;
+}
+
+.game .container .the-word {
+  font-size: 60px;
+  font-weight: bold;
+  color: #2196f3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.game .container .input {
+  padding: 15px;
+  margin: 10px auto;
+  width: 75%;
+  border: none;
+  outline: none;
+  display: block;
+  font-size: 20px;
+  border-radius: 7px;
+  border: 3px solid #2196f3;
+  text-align: center;
+  text-transform: capitalize;
+  caret-color: #2196f3;
+}
+
+.game .container .upcoming-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 7px;
+}
+
+.game .container .upcoming-words div {
+  background-color: #2196f3;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.game .container .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game .container .control span {
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.game .container .finish {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+}
+
+.game .container .finish .good {
+  color: #2196f3;
+}
+
+.game .container .finish .bad {
+  color: crimson;
+}
+
+.game .container .play-again {
+  background-color: cornflowerblue;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 20px;
+  width: 250px;
+  display: block;
+  margin: 0 auto 5px;
+  cursor: pointer;
+  border-radius: 7px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+.game .container .play-again:hover {
+  background-color: brown;
+}
+/*# sourceMappingURL=style.css.map */
